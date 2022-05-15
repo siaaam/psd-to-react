@@ -9,6 +9,9 @@ import Promo from './sections/Promo';
 import Services from './sections/Services';
 import Teams from './sections/Teams';
 
+// import '../node_modules/slick-carousel/slick/slick.css';
+// import '../node_modules/slick-carousel/slick/slick-theme.css';
+
 function App() {
   return (
     <Layout>
