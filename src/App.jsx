@@ -1,5 +1,6 @@
 import './App.css';
 import Layout from './components/layout/Layout';
+import ScrollBottom from './components/ScrollBottom';
 import About from './sections/About';
 import Contact from './sections/Contact';
 import FeaturedTeam from './sections/FeaturedTeam';
@@ -23,6 +24,7 @@ function App() {
       <Projects />
       <FeaturedTeam />
       <Contact />
+      <ScrollBottom />
     </Layout>
   );
 }
