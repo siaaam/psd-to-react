@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import SectionWrapper from './styles/SectionIntro';
+import { Zoom } from 'react-reveal';
+import { motion } from 'framer-motion';
 
 const Wrapper = styled(SectionWrapper)`
   a {
-    border: 1px solid#00e0d0;
+    border: 1px solid #15d0c3;
     color: #00e0d0;
     padding: 16px 30px;
     font-weight: bold;
@@ -29,18 +31,30 @@ const About = () => {
         <div className="row">
           <div className="col-lg-5">
             <div className="about-img text-center">
-              <img
-                src="img/big-logo.png"
-                alt="image not found"
-                className="img-fluid"
-              />
+              <Zoom>
+                <img
+                  src="img/big-logo.png"
+                  alt="image not found"
+                  className="img-fluid"
+                />
+              </Zoom>
             </div>
           </div>
           <div className="col-lg-7">
             <div className="about-text">
-              <h2>
-                OUR STORY <span>hi</span>
-              </h2>
+              <motion.h2
+                transition={{
+                  duration: 2,
+                  easings: 'easeInOut',
+                  delay: 2,
+                }}
+                initial={{
+                  x: -100,
+                }}
+                animate={{ x: 0 }}
+              >
+                OUR STORY
+              </motion.h2>
               <p>
                 This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
                 vel velit auctor aliquet. Aenean sollicitudin, lorem quis

@@ -8,6 +8,7 @@ import Home from './sections/Home';
 import Projects from './sections/Projects';
 import Promo from './sections/Promo';
 import Services from './sections/Services';
+import GlobalStyles from './sections/styles/GlobalStyles';
 import Teams from './sections/Teams';
 
 // import '../node_modules/slick-carousel/slick/slick.css';
@@ -16,6 +17,7 @@ import Teams from './sections/Teams';
 function App() {
   return (
     <Layout>
+      <GlobalStyles />
       <Home />
       <About />
       <Promo />
