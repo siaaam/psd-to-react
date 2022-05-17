@@ -1,6 +1,14 @@
 import React from 'react';
+import Slider from 'react-slick';
 
 const Teams = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+  };
   return (
     <section id="team" name="team">
       <div className="container">
@@ -14,83 +22,86 @@ const Teams = () => {
         </div>
 
         <div className="row team-slider">
-          <div className="col-lg-3">
-            <div className="team-member">
-              <div className="card team-card">
-                <img
-                  src="img/man1.jpg"
-                  className="card-img-top"
-                  alt="man image"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">SEMF UCUK</h5>
-                  <p className="card-text">CEO & FOUNDER</p>
+          <Slider {...settings}>
+            <div className="col-lg-3">
+              <div className="team-member">
+                <div className="card team-card">
+                  <img
+                    src="img/man1.jpg"
+                    className="card-img-top"
+                    alt="man image"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">SEMF UCUK</h5>
+                    <p className="card-text">CEO & FOUNDER</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-3">
-            <div className="team-member">
-              <div className="card team-card">
-                <img
-                  src="img/man02.jpg"
-                  className="card-img-top"
-                  alt="man image"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">DIK ADALIN</h5>
-                  <p className="card-text">ENGINEERING</p>
+            <div className="col-lg-3">
+              <div className="team-member">
+                <div className="card team-card">
+                  <img
+                    src="img/man02.jpg"
+                    className="card-img-top"
+                    alt="man image"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">DIK ADALIN</h5>
+                    <p className="card-text">ENGINEERING</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-3">
-            <div className="team-member">
-              <div className="card team-card">
-                <img
-                  src="img/man3.jpg"
-                  className="card-img-top"
-                  alt="man image"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">JENG KOL</h5>
-                  <p className="card-text">DESIGNER</p>
+            <div className="col-lg-3">
+              <div className="team-member">
+                <div className="card team-card">
+                  <img
+                    src="img/man3.jpg"
+                    className="card-img-top"
+                    alt="man image"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">JENG KOL</h5>
+                    <p className="card-text">DESIGNER</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-3">
-            <div className="team-member">
-              <div className="card team-card">
-                <img
-                  src="img/man4.jpg"
-                  className="card-img-top"
-                  alt="man image"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">PET ROMAK</h5>
-                  <p className="card-text">MARKETING</p>
+            <div className="col-lg-3">
+              <div className="team-member">
+                <div className="card team-card">
+                  <img
+                    src="img/man4.jpg"
+                    className="card-img-top"
+                    alt="man image"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">PET ROMAK</h5>
+                    <p className="card-text">MARKETING</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="col-lg-3">
-            <div className="team-member">
-              <div className="card team-card">
-                <img
-                  src="img/man5.jpg"
-                  className="card-img-top"
-                  alt="man image"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">PET ROMAK</h5>
-                  <p className="card-text">MARKETING</p>
+            <div className="col-lg-3">
+              <div className="team-member">
+                <div className="card team-card">
+                  <img
+                    src="img/man5.jpg"
+                    className="card-img-top"
+                    alt="man image"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">PET ROMAK</h5>
+                    <p className="card-text">MARKETING</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Slider>
         </div>
+
         <div className="row">
           <div className="col-lg-12">
             <div className="team-bottom-text">
