@@ -63,14 +63,14 @@ $(document).ready(function () {
     nextArrow: '.team-arrow-right',
   });
 
-  // venobox
-  $('.venobox').venobox({
-    framewidth: '500px',
-    frameheight: '400px',
-    border: '5px',
-    bgcolor: '#ffffff',
-    spinner: 'wave',
-  });
+  // // venobox
+  // $('.venobox').venobox({
+  //   framewidth: '500px',
+  //   frameheight: '400px',
+  //   border: '5px',
+  //   bgcolor: '#ffffff',
+  //   spinner: 'wave',
+  // });
 
   // sticky top menu
   // $(window).scroll(function () {

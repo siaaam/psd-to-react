@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Venobox from 'venobox';
 
 const Promo = () => {
+  useEffect(() => {
+    new Venobox({
+      autoPlay: false,
+      spinner: 'wave',
+    });
+  }, []);
   return (
     <section id="video-part" name="video-part">
       <div className="container">
@@ -9,7 +16,6 @@ const Promo = () => {
             <div className="video-icon text-center">
               <a
                 className="venobox"
-                data-autoplay="true"
                 data-vbtype="video"
                 href="https://youtu.be/9KqUlIY2Aew"
               >

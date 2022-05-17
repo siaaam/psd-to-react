@@ -1,6 +1,11 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import Venobox from 'venobox';
 const Projects = () => {
+  useEffect(() => {
+    new Venobox({
+      spinner: 'grid',
+    });
+  }, []);
   return (
     <section id="project" name="project">
       <div className="container">
