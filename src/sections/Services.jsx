@@ -1,8 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
+import SectionWrapper from './styles/SectionIntro';
+
+const Wrapper = styled(SectionWrapper)`
+  p {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+  }
+`;
 
 const Services = () => {
   return (
-    <section id="section-part" name="section-part">
+    <Wrapper id="section-part" name="section-part">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
@@ -75,7 +84,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Wrapper>
   );
 };
 
